@@ -5,7 +5,6 @@ library(DaisTheme)
 library(readr)
 library(scales)
 
-setwd("C:/Users/alockhart/Desktop/FSC AI Productivity 2024/")
 graph.data <-  fread("Graphs_spreadsheet.csv")
 
 figure_1_data <- fread("Figure_1.csv")
@@ -71,8 +70,7 @@ fig_3 <- ggplot(figure_3_data, aes(x = as.numeric(Year),
   labs(title = graph.data[graph.data$Figure_number=="Figure 3",Figure_number],
        subtitle = graph.data[graph.data$Figure_number=="Figure 3",Figure_title],
        x = graph.data[graph.data$Figure_number=="Figure 3",X_Axis],
-       y = graph.data[graph.data$Figure_number=="Figure 3",Y_Axis],
-       color = graph.data[graph.data$Figure_number=="Figure 3", Legend_name])+
+       y = graph.data[graph.data$Figure_number=="Figure 3",Y_Axis])+
   geom_hline(yintercept = 0)+
   theme(#legend.text = element_text(size = 12),
         #legend.title = element_text(size = 12),
@@ -85,7 +83,3 @@ fig_3 <- ggplot(figure_3_data, aes(x = as.numeric(Year),
 export.dais.plot("Exported/Figure_1.pdf",fig_1,p.height = 6, p.width = 9)
 export.dais.plot("Exported/Figure_2.pdf",fig_2,p.height = 6, p.width = 9)
 export.dais.plot("Exported/Figure_3.pdf",fig_3,p.height = 6, p.width = 9)
-
-export.dais.plot("Exported/Figure_1.svg",fig_1,p.height = 6, p.width = 9)
-export.dais.plot("Exported/Figure_2.svg",fig_2,p.height = 6, p.width = 9)
-export.dais.plot("Exported/Figure_3.svg",fig_3,p.height = 6, p.width = 9)
