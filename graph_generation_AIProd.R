@@ -63,10 +63,10 @@ fig_3 <- ggplot(figure_3_data, aes(x = as.numeric(Year),
     aes(ymin = Minimum,
         ymax = Maximum))+
   geom_point(size=5)+
-  scale_color_manual(values = c("Before adopting AI"="#eb0072", "After adopting AI"="#004c9b"))+
+  scale_color_manual(values = c("Before"="#eb0072", "After"="#004c9b"))+
   geom_vline(xintercept = 2019.5, linetype = "dashed", color = "black", size = 1) + # Vertical line between 2019 and 2020
-  annotate("text", x = 2018, y = 1.4, label = "Period before AI Adoption", hjust = 0.5, color = "black", size = 5, family="Replica-Regular") +
-  annotate("text", x = 2021, y = 1.4, label = "AI Adoption Period", hjust = 0.5, color = "black", size = 5, family="Replica-Regular") +
+  annotate("text", x = 2018, y = 1.4, label = graph.data[graph.data$Figure_number=="Figure 3",Legend_label_1], hjust = 0.5, color = "black", size = 5, family="Replica-Regular") +
+  annotate("text", x = 2021, y = 1.4, label = graph.data[graph.data$Figure_number=="Figure 3",Legend_label_2], hjust = 0.5, color = "black", size = 5, family="Replica-Regular") +
   scale_y_continuous(limits = c(-1.5,1.5))+
   labs(title = graph.data[graph.data$Figure_number=="Figure 3",Figure_number],
        subtitle = graph.data[graph.data$Figure_number=="Figure 3",Figure_title],
@@ -86,6 +86,6 @@ export.dais.plot("Exported/Figure_1.pdf",fig_1,p.height = 6, p.width = 9)
 export.dais.plot("Exported/Figure_2.pdf",fig_2,p.height = 6, p.width = 9)
 export.dais.plot("Exported/Figure_3.pdf",fig_3,p.height = 6, p.width = 9)
 
-export.dais.plot("Exported/Figure_1.svg",fig_1,p.height = 6, p.width = 9, type = "svg")
-export.dais.plot("Exported/Figure_2.svg",fig_2,p.height = 6, p.width = 9, type = "svg")
-export.dais.plot("Exported/Figure_3.svg",fig_3,p.height = 6, p.width = 9, type = "svg")
+export.dais.plot("Exported/Figure_1.svg",fig_1,p.height = 6, p.width = 9)
+export.dais.plot("Exported/Figure_2.svg",fig_2,p.height = 6, p.width = 9)
+export.dais.plot("Exported/Figure_3.svg",fig_3,p.height = 6, p.width = 9)
