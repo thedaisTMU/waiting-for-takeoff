@@ -1,6 +1,0 @@
-﻿Figure_number,Approx_page,Figure_title,X_Axis,Y_Axis,Caption,Legend_name,Legend_label_1,Legend_label_2,Legend_label_3,X_Axis_Ticks_1,X_Axis_Ticks_2,Y_Axis_Ticks_1,Y_Axis_Ticks_2,Figure_title_FR,X_Axis_FR,Y_Axis_FR,Legend_name_FR,Legend_label_1_FR,Legend_label_2_FR,X_Axis_Ticks_1_FR,X_Axis_Ticks_2_FR,Y_Axis_Ticks_1_FR,Y_Axis_Ticks_2_FR
-Figure 1,20,Total Factor Productivity by Year and AI Adoption,Year,Total Factor Productivity,,Group,Adopters,Non-adopters,,,,,,,,,,,,,,,
-Figure 2,21,Total Factor Productivity Growth by Year and AI Adoption,Year,Total Factor Productivity Growth,,Group,Adopters,Non-adopters,,,,,,,,,,,,,,,
-Figure 3,23,Impact of Adopting AI on Productivity Growth (Relative to Non-Adopting Firms),Year,"Impact of Adopting AI
-(Relative Growth in AI Adopting Firms)",,,Period before AI Adoption,AI adoption period,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,
