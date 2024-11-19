@@ -1,0 +1,11 @@
+﻿Figure,English,French
+"Figure 1, Figure 2, Figure 3",Year,Année
+Figure 1,Total Factor Productivity,Productivité globale des facteurs
+"Figure 1, Figure 2",Adopters,Adopteurs
+"Figure 1, Figure 2",Non-adopters,Non-adopteurs
+Figure 2,Total Factor Productivity Growth,Croissance de la productivité globale des facteurs
+Figure 1,Total Factor Productivity by Year and AI Adoption,Productivité globale des facteurs par année et adoption de l’IA
+Figure 2,Total Factor Productivity Growth by Year and AI Adoption,Croissance de la productivité globale des facteurs par année et adoption de l’IA
+Figure 3,Period before AI Adoption,Période avant l’adoption de l’IA
+Figure 3,Period after AI Adoption,Période après l’adoption de l’IA
+Figure 3,Impact of Adopting AI on Productivity Growth (Relative to non-adopting firms),Impact de l’adoption de l’IA sur la croissance de la productivité (par rapport aux entreprises n’ayant pas adopté l’IA)
