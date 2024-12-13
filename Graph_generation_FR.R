@@ -51,7 +51,7 @@ fig_2 <- ggplot(figure_2_data, aes(x = financial_year, y = mean_tfp, group =C320
        x = graph.data[graph.data$Figure_number=="Figure 2",X_Axis_FR],
        y = graph.data[graph.data$Figure_number=="Figure 2",Y_Axis_FR],
        color = graph.data[graph.data$Figure_number=="Figure 2", Legend_name_FR])+
-  scale_y_continuous(labels = label_currency(prefix = "", suffix = " %", decimal.mark = ",")) +
+  scale_y_continuous(labels = label_currency(prefix = "", decimal.mark = ",")) +
   scale_color_manual(values = setNames(c("#eb0072", "#004c9b"),
                                        c(graph.data[graph.data$Figure_number == "Figure 2", "Legend_label_1_FR"],
                                          graph.data[graph.data$Figure_number == "Figure 2", "Legend_label_2_FR"])))+
