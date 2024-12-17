@@ -79,9 +79,9 @@ fig_3 <- ggplot(figure_3_data, aes(x = as.numeric(Year),
   annotate("text", x = 2021, y = 1.4, label = graph.data[graph.data$Figure_number=="Figure 3",Legend_label_2_FR], hjust = 0.5, color = "black", size = 5, family="Replica-Regular") +
   scale_y_continuous(limits = c(-1.5,1.5))+
   labs(title = graph.data[graph.data$Figure_number=="Figure 3",Figure_number],
-       subtitle = graph.data[graph.data$Figure_number=="Figure 3",Figure_title_FR],
+       subtitle = str_wrap(graph.data[graph.data$Figure_number=="Figure 3",Figure_title_FR],width=66),
        x = graph.data[graph.data$Figure_number=="Figure 3",X_Axis_FR],
-       y = graph.data[graph.data$Figure_number=="Figure 3",Y_Axis_FR])+
+       y = str_wrap(graph.data[graph.data$Figure_number=="Figure 3",Y_Axis_FR]),width=66)+
   geom_hline(yintercept = 0)+
   theme(
     legend.position="none",
